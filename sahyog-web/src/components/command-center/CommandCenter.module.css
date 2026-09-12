@@ -1,0 +1,297 @@
+.page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  padding: 14px;
+}
+
+.clickableCard {
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.clickableCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.cardTitleRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.statsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.statBox {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.statLabel {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.statValue {
+  display: block;
+  margin-top: 2px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.severityBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badgeGreen {
+  background: var(--badge-green-bg);
+  color: var(--badge-green-fg);
+}
+
+.badgeYellow {
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-fg);
+}
+
+.badgeRed {
+  background: var(--badge-red-bg);
+  color: var(--badge-red-fg);
+}
+
+.severityBarWrap {
+  margin-top: 12px;
+}
+
+.severityBarTrack {
+  background: var(--color-border-light);
+  border-radius: 999px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.severityBarFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.fillGreen {
+  background: #22c55e;
+}
+
+.fillYellow {
+  background: #f59e0b;
+}
+
+.fillRed {
+  background: #ef4444;
+}
+
+.tableWrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  border-bottom: 1px solid var(--color-border-light);
+  padding: 11px;
+  font-size: 13px;
+}
+
+.table th {
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
+}
+
+.filtersRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input,
+.select {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  min-width: 180px;
+}
+
+.button {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.mapCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.mapLegend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border-light);
+  background: var(--color-bg);
+  font-size: 12px;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.skeleton {
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--shimmer-from) 25%, var(--shimmer-via) 37%, var(--shimmer-from) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.2s linear infinite;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal {
+  width: min(460px, 100%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-xl);
+  padding: 16px;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modalText {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 8px 0 14px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.kpiCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.kpiLabel {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.kpiValue {
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: 800;
+}

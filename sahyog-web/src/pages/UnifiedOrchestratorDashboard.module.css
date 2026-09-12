@@ -1,0 +1,298 @@
+.orchestratorPage {
+  padding: 24px;
+  font-family: 'Inter', system-ui, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.headerLeft h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerLeft p {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.liveIndicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: livePulse 1.5s infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* ── Summary Cards ──────────────────────────────────────────── */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.summaryCard {
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--color-surface, #fff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.summaryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.summaryCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.cardCritical::before { background: linear-gradient(90deg, #ef4444, #dc2626); }
+.cardHigh::before { background: linear-gradient(90deg, #f97316, #ea580c); }
+.cardMedium::before { background: linear-gradient(90deg, #eab308, #ca8a04); }
+.cardLow::before { background: linear-gradient(90deg, #22c55e, #16a34a); }
+.cardTotal::before { background: linear-gradient(90deg, #6366f1, #4f46e5); }
+.cardSource::before { background: linear-gradient(90deg, #8b5cf6, #7c3aed); }
+
+.cardLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.cardValue {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.cardSubtext {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* ── Source Chips ────────────────────────────────────────────── */
+.sourceChips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.sourceChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.sourceApp { background: #dbeafe; color: #1d4ed8; }
+.sourceMesh { background: #ede9fe; color: #6d28d9; }
+.sourceBeacon { background: #ffedd5; color: #c2410c; }
+.sourceIvr { background: #d1fae5; color: #065f46; }
+.sourceDirect { background: #e0f2fe; color: #0369a1; }
+
+/* ── Signal Feed ────────────────────────────────────────────── */
+.feedSection {
+  margin-top: 8px;
+}
+
+.feedTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+}
+
+.feedTable thead th {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-text-muted);
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+}
+
+.feedTable tbody tr {
+  transition: background 0.15s;
+}
+
+.feedTable tbody tr:hover {
+  background: var(--color-bg-hover, #f8fafc);
+}
+
+.feedTable tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border, #f1f5f9);
+  vertical-align: middle;
+}
+
+/* ── Risk Level Badges ──────────────────────────────────────── */
+.riskBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.riskCritical { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+.riskHigh { background: #fff7ed; color: #ea580c; border: 1px solid #fed7aa; }
+.riskMedium { background: #fefce8; color: #ca8a04; border: 1px solid #fef08a; }
+.riskLow { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+.riskPending { background: #f8fafc; color: #64748b; border: 1px solid #e2e8f0; }
+
+/* ── Escalation Timeline ────────────────────────────────────── */
+.escalationTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.escalationStep {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.escalationDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dotCompleted { background: #10b981; }
+.dotDispatched { background: #f59e0b; }
+.dotPending { background: #94a3b8; }
+
+/* ── Empty State ────────────────────────────────────────────── */
+.emptyState {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-text-muted);
+}
+
+.emptyState span {
+  display: block;
+  font-size: 40px;
+  opacity: 0.3;
+  margin-bottom: 8px;
+}
+
+/* ── Loading ────────────────────────────────────────────────── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.error {
+  text-align: center;
+  padding: 40px;
+  color: #ef4444;
+}
+
+/* ── AI Assessment Tooltip ─────────────────────────────────── */
+.aiTooltip {
+  position: relative;
+  cursor: help;
+}
+
+.aiTooltipContent {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: #1e293b;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  width: 280px;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  line-height: 1.5;
+}
+
+.aiTooltip:hover .aiTooltipContent {
+  display: block;
+}
+
+.idCode {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  background: var(--color-bg-hover, #f1f5f9);
+  padding: 2px 6px;
+  border-radius: 4px;
+}

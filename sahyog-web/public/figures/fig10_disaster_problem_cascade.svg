@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLight10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowL10">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowCasL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" rx="16" fill="url(#bgLight10)"/>
+  <rect x="1" y="1" width="958" height="518" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#0f172a" letter-spacing="1">THE REAL-WORLD DISASTER RESPONSE BOTTLENECK CASCADE</text>
+  <text x="480" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b">How Infrastructure Collapse Amplifies Crisis Risk into Catastrophic Delays</text>
+
+  <!-- ── 5 CASCADE STAGES ── -->
+  <!-- Stage 1: Disaster Strikes -->
+  <g transform="translate(60, 85)">
+    <rect width="260" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#dc2626">1. DISASTER STRIKES</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Flood, Earthquake, Cyclone, Fire</text>
+  </g>
+
+  <line x1="330" y1="115" x2="370" y2="115" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowCasL)"/>
+
+  <!-- Stage 2: Communication Loss -->
+  <g transform="translate(380, 85)">
+    <rect width="260" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#dc2626">2. COMMUNICATION LOSS</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Towers Down, Power Blackout</text>
+  </g>
+
+  <line x1="650" y1="115" x2="690" y2="115" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowCasL)"/>
+
+  <!-- Stage 3: Coordination Breakdown -->
+  <g transform="translate(700, 85)">
+    <rect width="210" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <text x="15" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#dc2626">3. TEAM FRAGMENTATION</text>
+    <text x="15" y="44" font-family="system-ui, sans-serif" font-size="9" fill="#334155">Siloed Responders &amp; NGOs</text>
+  </g>
+
+  <path d="M 805 150 L 805 185 L 590 185" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowCasL)"/>
+
+  <!-- Stage 4: Response Delay -->
+  <g transform="translate(280, 155)">
+    <rect width="300" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#dc2626">4. CRITICAL RESPONSE DELAYS</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Manual Triage Bottlenecks (3-4 Hrs)</text>
+  </g>
+
+  <line x1="270" y1="185" x2="230" y2="185" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowCasL)"/>
+
+  <!-- Stage 5: Higher Risk / Casualty -->
+  <g transform="translate(60, 155)">
+    <rect width="160" height="60" rx="8" fill="#dc2626" stroke="#b91c1c" stroke-width="2" filter="url(#shadowL10)"/>
+    <text x="80" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#ffffff">5. HIGHER LOSSES</text>
+    <text x="80" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fecaca">Preventable Casualties</text>
+  </g>
+
+  <!-- ── 3 ROOT PROBLEM PILLARS ── -->
+  <!-- Problem 1: Comm -->
+  <g transform="translate(60, 235)">
+    <rect width="260" height="185" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <rect x="0" y="0" width="260" height="26" rx="8" fill="#2563eb"/>
+    <text x="130" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#fff">📡 COMMUNICATION FAILURE</text>
+    
+    <text x="16" y="52" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Conventional cell networks fail</text>
+    <text x="16" y="70" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Power grid cuts disable routers</text>
+    <text x="16" y="88" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Network congestion drops calls</text>
+    <text x="16" y="112" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#0284c7">💡 Sahyog Fix:</text>
+    <text x="16" y="130" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Zero-infrastructure BLE mesh &amp; local store-and-forward SQLite buffer.</text>
+  </g>
+
+  <!-- Problem 2: Response Delay -->
+  <g transform="translate(350, 235)">
+    <rect width="260" height="185" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <rect x="0" y="0" width="260" height="26" rx="8" fill="#d97706"/>
+    <text x="130" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#fff">🚨 DELAYED RESPONSE TRIAGE</text>
+    
+    <text x="16" y="52" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Operators inundated by calls</text>
+    <text x="16" y="70" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Panicked unstructured voices</text>
+    <text x="16" y="88" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Severity is manually guessed</text>
+    <text x="16" y="112" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#b45309">💡 Sahyog Fix:</text>
+    <text x="16" y="130" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Gemini 2.5 Flash multimodal AI image damage &amp; voice transcription triage.</text>
+  </g>
+
+  <!-- Problem 3: Fragmented Coordination -->
+  <g transform="translate(640, 235)">
+    <rect width="260" height="185" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL10)"/>
+    <rect x="0" y="0" width="260" height="26" rx="8" fill="#059669"/>
+    <text x="130" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#fff">👥 FRAGMENTED COORDINATION</text>
+    
+    <text x="16" y="52" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• No unified operational picture</text>
+    <text x="16" y="70" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• NGOs duplicate rescue runs</text>
+    <text x="16" y="88" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Nearby responders bypassed</text>
+    <text x="16" y="112" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#059669">💡 Sahyog Fix:</text>
+    <text x="16" y="130" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">PostGIS proximity routing &amp; live WebSocket tactical command center.</text>
+  </g>
+
+  <!-- Bottom Core Rationale Box -->
+  <rect x="60" y="440" width="840" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="480" y="468" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">
+    🎯 "Disaster response is not just detecting an emergency — it is maintaining communication and coordinating the right response when infrastructure itself is failing."
+  </text>
+</svg>

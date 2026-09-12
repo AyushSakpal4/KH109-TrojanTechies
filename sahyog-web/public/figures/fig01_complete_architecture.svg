@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="lightShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowDownLight" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="620" rx="16" fill="url(#bgGradLight)"/>
+  <rect x="1" y="1" width="958" height="618" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title Header -->
+  <text x="480" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#0f172a" letter-spacing="1">SAHYOG RESQCONNECT — COMPLETE SYSTEM ARCHITECTURE</text>
+  <text x="480" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b">Decentralized Edge, Resilient Communication, Unified AI Orchestration &amp; Spatial Data Layer</text>
+
+  <!-- ── LAYER 1: USERS & EDGE ── -->
+  <g transform="translate(40, 80)">
+    <rect width="660" height="95" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" filter="url(#lightShadow)"/>
+    <rect x="0" y="0" width="160" height="24" rx="6" fill="#2563eb"/>
+    <text x="80" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff" letter-spacing="0.8">1. USERS &amp; EDGE DEVICES</text>
+
+    <g transform="translate(15, 34)">
+      <rect width="95" height="48" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="47" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Flutter Mobile</text>
+      <text x="47" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Citizen / Vol</text>
+    </g>
+    <g transform="translate(120, 34)">
+      <rect width="95" height="48" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="47" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">React Web</text>
+      <text x="47" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Admin / Coord</text>
+    </g>
+    <g transform="translate(225, 34)">
+      <rect width="95" height="48" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="47" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">NGO Portal</text>
+      <text x="47" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Supply Hubs</text>
+    </g>
+    <g transform="translate(330, 34)">
+      <rect width="95" height="48" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+      <text x="47" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#0284c7">BLE Mesh</text>
+      <text x="47" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Offline Hop</text>
+    </g>
+    <g transform="translate(435, 34)">
+      <rect width="95" height="48" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+      <text x="47" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#0284c7">LoRa Relay</text>
+      <text x="47" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Long Range</text>
+    </g>
+    <g transform="translate(540, 34)">
+      <rect width="105" height="48" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="52" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">IVR / SMS</text>
+      <text x="52" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Feature Phones</text>
+    </g>
+  </g>
+
+  <!-- Flow Arrow 1 -->
+  <line x1="370" y1="176" x2="370" y2="200" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowDownLight)"/>
+
+  <!-- ── LAYER 2: API & GATEWAY ── -->
+  <g transform="translate(40, 202)">
+    <rect width="660" height="90" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5" filter="url(#lightShadow)"/>
+    <rect x="0" y="0" width="180" height="24" rx="6" fill="#4f46e5"/>
+    <text x="90" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff" letter-spacing="0.8">2. API &amp; INGESTION GATEWAY</text>
+
+    <g transform="translate(20, 32)">
+      <rect width="135" height="45" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="67" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Clerk Auth</text>
+      <text x="67" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">JWT / RBAC Security</text>
+    </g>
+    <g transform="translate(175, 32)">
+      <rect width="145" height="45" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Express REST API</text>
+      <text x="72" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">27 Modular Routes</text>
+    </g>
+    <g transform="translate(340, 32)">
+      <rect width="145" height="45" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Socket.IO WebSockets</text>
+      <text x="72" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Real-Time Sync</text>
+    </g>
+    <g transform="translate(505, 32)">
+      <rect width="135" height="45" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="67" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Rate Limiter &amp; CORS</text>
+      <text x="67" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">DDoS Protection</text>
+    </g>
+  </g>
+
+  <!-- Flow Arrow 2 -->
+  <line x1="370" y1="293" x2="370" y2="317" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowDownLight)"/>
+
+  <!-- ── LAYER 3: CORE BACKEND SERVICES ── -->
+  <g transform="translate(40, 320)">
+    <rect width="660" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#lightShadow)"/>
+    <rect x="0" y="0" width="180" height="24" rx="6" fill="#059669"/>
+    <text x="90" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff" letter-spacing="0.8">3. CORE RESPONSE SERVICES</text>
+
+    <g transform="translate(15, 34)">
+      <rect width="145" height="62" rx="6" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+      <text x="72" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#059669">Unified Orchestrator</text>
+      <text x="72" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#334155">PS8 Signal Routing</text>
+      <text x="72" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Auto-Dispatch Engine</text>
+    </g>
+    <g transform="translate(175, 34)">
+      <rect width="145" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">AI Triage Service</text>
+      <text x="72" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#334155">Severity Analysis</text>
+      <text x="72" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Multimodal Vision/Audio</text>
+    </g>
+    <g transform="translate(335, 34)">
+      <rect width="145" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="72" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Location Service</text>
+      <text x="72" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#334155">Proximity Matching</text>
+      <text x="72" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Geocoding &amp; Spatial Filter</text>
+    </g>
+    <g transform="translate(495, 34)">
+      <rect width="150" height="62" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="75" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Heatmap &amp; Cluster</text>
+      <text x="75" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#334155">K-Means Density</text>
+      <text x="75" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Real-Time Risk Banding</text>
+    </g>
+  </g>
+
+  <!-- Flow Arrow 3 -->
+  <line x1="370" y1="431" x2="370" y2="455" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowDownLight)"/>
+
+  <!-- ── LAYER 4: DATA & STORAGE ── -->
+  <g transform="translate(40, 458)">
+    <rect width="660" height="95" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5" filter="url(#lightShadow)"/>
+    <rect x="0" y="0" width="160" height="24" rx="6" fill="#d97706"/>
+    <text x="80" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff" letter-spacing="0.8">4. DATA &amp; PERSISTENCE</text>
+
+    <g transform="translate(20, 32)">
+      <rect width="135" height="50" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+      <text x="67" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#b45309">PostgreSQL</text>
+      <text x="67" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Structured Core DB</text>
+    </g>
+    <g transform="translate(175, 32)">
+      <rect width="145" height="50" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+      <text x="72" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#b45309">PostGIS Spatial</text>
+      <text x="72" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#475569">ST_DWithin &amp; Polygon</text>
+    </g>
+    <g transform="translate(340, 32)">
+      <rect width="145" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="72" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Redis In-Memory</text>
+      <text x="72" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#475569">Pub/Sub &amp; Geo Cache</text>
+    </g>
+    <g transform="translate(505, 32)">
+      <rect width="135" height="50" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="67" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Supabase Storage</text>
+      <text x="67" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#475569">SOS Images &amp; Audio</text>
+    </g>
+  </g>
+
+  <!-- ── RIGHT SIDE: EXTERNAL INTEGRATIONS ── -->
+  <g transform="translate(725, 80)">
+    <rect width="195" height="473" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#lightShadow)"/>
+    <rect x="0" y="0" width="195" height="28" rx="8" fill="#e2e8f0"/>
+    <text x="97" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#334155" letter-spacing="0.8">EXTERNAL PIPELINES</text>
+
+    <!-- Gemini AI Card -->
+    <g transform="translate(12, 45)">
+      <rect width="170" height="90" rx="8" fill="#ffffff" stroke="#c084fc" stroke-width="1.5"/>
+      <text x="85" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#7c3aed">Gemini 2.5 Flash</text>
+      <text x="85" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Visual Damage Triage</text>
+      <text x="85" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Voice Audio Extraction</text>
+      <text x="85" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Situation Briefs</text>
+    </g>
+
+    <!-- Maps / GIS Card -->
+    <g transform="translate(12, 150)">
+      <rect width="170" height="90" rx="8" fill="#ffffff" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="85" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#0284c7">GIS &amp; 3D Terrain</text>
+      <text x="85" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Leaflet 2D Vectors</text>
+      <text x="85" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• CesiumJS 3D Photogram</text>
+      <text x="85" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• CartoDB Clean Tiles</text>
+    </g>
+
+    <!-- Telecom Card -->
+    <g transform="translate(12, 255)">
+      <rect width="170" height="85" rx="8" fill="#ffffff" stroke="#f472b6" stroke-width="1.5"/>
+      <text x="85" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#db2777">Twilio Telephony</text>
+      <text x="85" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Automated 112 Voice</text>
+      <text x="85" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• SMS Broadcast Alerts</text>
+      <text x="85" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• Interactive Voice Triage</text>
+    </g>
+
+    <!-- Weather & Radar Card -->
+    <g transform="translate(12, 355)">
+      <rect width="170" height="85" rx="8" fill="#ffffff" stroke="#34d399" stroke-width="1.5"/>
+      <text x="85" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#059669">Live Telemetry &amp; News</text>
+      <text x="85" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• IMD Doppler Radar</text>
+      <text x="85" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• NDMA Guidelines</text>
+      <text x="85" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#334155">• CNA / Times Now 24/7</text>
+    </g>
+  </g>
+
+  <!-- Connectors to Side Panel -->
+  <line x1="700" y1="360" x2="725" y2="125" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="700" y1="380" x2="725" y2="195" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="700" y1="240" x2="725" y2="295" stroke="#db2777" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Footer Tagline -->
+  <text x="480" y="595" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#64748b">
+    Sahyog Unified Response Architecture • Zero-Infrastructure Offline First • Real-Time Spatial Coordination
+  </text>
+</svg>

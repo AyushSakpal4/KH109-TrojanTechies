@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLight9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowL9">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="540" rx="16" fill="url(#bgLight9)"/>
+  <rect x="1" y="1" width="958" height="538" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="800" fill="#0f172a" letter-spacing="1">REAL-TIME DISASTER COMMAND CENTER &amp; GIS DASHBOARD</text>
+
+  <!-- ── TOP LIVE TELEMETRY BAR ── -->
+  <g transform="translate(30, 50)">
+    <rect width="900" height="38" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <text x="15" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#0369a1">🛰️ SAHYOG TACTICAL SITUATION MONITOR</text>
+    <rect x="290" y="8" width="55" height="22" rx="4" fill="#dc2626"/>
+    <text x="317" y="23" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#fff">● LIVE</text>
+
+    <!-- Threat pill -->
+    <rect x="360" y="8" width="130" height="22" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+    <text x="425" y="23" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#dc2626">THREAT: ELEVATED</text>
+
+    <!-- Metric pills -->
+    <text x="520" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#0f172a">
+      SOS: <tspan fill="#dc2626">18</tspan> &nbsp;|&nbsp;
+      VOLUNTEERS: <tspan fill="#2563eb">42</tspan> &nbsp;|&nbsp;
+      SUPPLIES: <tspan fill="#059669">12 HUBS</tspan> &nbsp;|&nbsp;
+      ZONES: <tspan fill="#d97706">3 ACTIVE</tspan>
+    </text>
+
+    <!-- Clock -->
+    <text x="880" y="24" text-anchor="end" font-family="SF Mono, monospace" font-size="11" font-weight="700" fill="#64748b">09:14:02 IST</text>
+  </g>
+
+  <!-- ── MAIN BODY: 2 COLUMNS ── -->
+  <!-- LEFT: Tactical Map (Width 580) -->
+  <g transform="translate(30, 98)">
+    <rect width="590" height="420" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadowL9)"/>
+
+    <!-- Map Grid lines simulation -->
+    <line x1="0" y1="100" x2="590" y2="100" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="0" y1="200" x2="590" y2="200" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="0" y1="300" x2="590" y2="300" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="420" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="420" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="420" stroke="#e2e8f0" stroke-width="1"/>
+
+    <!-- Hazard Polygon (Amber shaded zone) -->
+    <polygon points="120,80 240,60 280,160 160,190" fill="#fef3c7" fill-opacity="0.6" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="180" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#b45309">SECTOR-4 FLOOD ZONE</text>
+
+    <!-- Radar Ping Marker 1 (Critical SOS) -->
+    <circle cx="210" cy="140" r="28" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+    <circle cx="210" cy="140" r="16" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="210" cy="140" r="8" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+    <rect x="225" y="125" width="115" height="32" rx="4" fill="#ffffff" stroke="#fca5a5" stroke-width="1"/>
+    <text x="232" y="140" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#dc2626">SOS #104 (CRITICAL)</text>
+    <text x="232" y="151" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">3 Trapped • Water 1.8m</text>
+
+    <!-- Radar Ping Marker 2 (SOS 2) -->
+    <circle cx="420" cy="240" r="18" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+    <circle cx="420" cy="240" r="7" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+    <text x="432" y="244" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#dc2626">SOS #108</text>
+
+    <!-- Volunteer Marker (Blue) -->
+    <circle cx="340" cy="180" r="7" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+    <text x="352" y="184" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">Vol. Squad Alpha (2.4 km)</text>
+    <line x1="340" y1="180" x2="210" y2="140" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <!-- Supply Hub (Green) -->
+    <rect x="100" y="280" width="12" height="12" rx="2" fill="#059669" stroke="#fff" stroke-width="1.5"/>
+    <text x="118" y="290" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#047857">NDRF Supply Depot-A</text>
+
+    <!-- Map Chips Legend at bottom of Map -->
+    <g transform="translate(70, 375)">
+      <rect width="450" height="30" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" filter="url(#shadowL9)"/>
+      <circle cx="30" cy="15" r="4" fill="#dc2626"/>
+      <text x="40" y="19" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#334155">SOS: <tspan fill="#dc2626" font-weight="900">18</tspan></text>
+      <circle cx="120" cy="15" r="4" fill="#d97706"/>
+      <text x="130" y="19" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#334155">Zones: <tspan fill="#d97706" font-weight="900">3</tspan></text>
+      <circle cx="210" cy="15" r="4" fill="#059669"/>
+      <text x="220" y="19" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#334155">Supplies: <tspan fill="#059669" font-weight="900">12</tspan></text>
+      <circle cx="310" cy="15" r="4" fill="#2563eb"/>
+      <text x="320" y="19" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#334155">Volunteers: <tspan fill="#2563eb" font-weight="900">42</tspan></text>
+    </g>
+  </g>
+
+  <!-- RIGHT: Operational Deck (Width 290) -->
+  <g transform="translate(635, 98)">
+    <rect width="295" height="420" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadowL9)"/>
+    <rect x="0" y="0" width="295" height="28" rx="8" fill="#e2e8f0"/>
+    <text x="147" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#334155">🚨 LIVE INCIDENT &amp; AI DISPATCH</text>
+
+    <!-- Highlighted Active Card: SOS #104 -->
+    <g transform="translate(12, 38)">
+      <rect width="271" height="150" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+      <rect x="0" y="0" width="271" height="24" rx="6" fill="#fef2f2"/>
+      <text x="10" y="16" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#dc2626">SOS #104 • CRITICAL SEVERITY (9.4)</text>
+      <text x="260" y="16" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">2 min ago</text>
+
+      <text x="10" y="42" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#0f172a">Urban Flood • 3 Trapped on Rooftop</text>
+      <text x="10" y="60" font-family="system-ui, sans-serif" font-size="9" fill="#334155">AI Analysis: High water velocity, power cut.</text>
+      <text x="10" y="76" font-family="system-ui, sans-serif" font-size="9" fill="#334155">Nearest Responder: <tspan fill="#0284c7" font-weight="700">Squad Alpha (2.4 km)</tspan></text>
+      <text x="10" y="92" font-family="system-ui, sans-serif" font-size="9" fill="#334155">Required Resource: <tspan fill="#059669" font-weight="700">Inflatable Rescue Boat</tspan></text>
+
+      <!-- Action Button -->
+      <rect x="10" y="108" width="251" height="30" rx="6" fill="#059669"/>
+      <text x="135" y="127" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#fff">⚡ APPROVE &amp; DISPATCH SQUAD</text>
+    </g>
+
+    <!-- Secondary Incident Card: SOS #108 -->
+    <g transform="translate(12, 198)">
+      <rect width="271" height="95" rx="8" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+      <text x="10" y="20" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#b45309">SOS #108 • HIGH SEVERITY (7.8)</text>
+      <text x="10" y="40" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#0f172a">Medical Emergency • Oxygen Needed</text>
+      <text x="10" y="58" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Sector 2 Community Clinic • 1.1 km</text>
+      <rect x="10" y="68" width="251" height="20" rx="4" fill="#e2e8f0"/>
+      <text x="135" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#0284c7">Assigned: Volunteer Dr. Sharma (En Route)</text>
+    </g>
+
+    <!-- 24/7 Broadcast / Weather Mini Deck -->
+    <g transform="translate(12, 303)">
+      <rect width="271" height="105" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0284c7">📺 24/7 CRISIS STREAM &amp; RADAR</text>
+      <rect x="10" y="30" width="251" height="42" rx="4" fill="#f1f5f9"/>
+      <text x="135" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#0f172a">CNA 24/7 • Live Disaster Broadcast</text>
+      <text x="135" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#64748b">IMD Doppler: Heavy Precipitation Active</text>
+      <text x="10" y="92" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#94a3b8">Synced with National Emergency Network (112)</text>
+    </g>
+  </g>
+</svg>

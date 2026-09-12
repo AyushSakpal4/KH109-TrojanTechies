@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLight3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowL3">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowWfL" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+      <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="480" rx="16" fill="url(#bgLight3)"/>
+  <rect x="1" y="1" width="958" height="478" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#0f172a" letter-spacing="1">FROM SOS TO RESCUE — END-TO-END RESPONSE FLOW</text>
+  <text x="480" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b">9-Stage Closed-Loop Response Pipeline with Live Command Center Telemetry</text>
+
+  <!-- ── ROW 1: Stages 1 to 5 ── -->
+  <g transform="translate(30, 85)">
+    <!-- Stage 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="155" height="85" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="155" height="22" rx="6" fill="#dc2626"/>
+      <text x="77" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">1. SOS TRIGGER</text>
+      <text x="77" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#991b1b">Citizen Distress</text>
+      <text x="77" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">GPS + Photo + Audio</text>
+    </g>
+
+    <line x1="160" y1="42" x2="185" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 2 -->
+    <g transform="translate(190, 0)">
+      <rect width="155" height="85" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="155" height="22" rx="6" fill="#0284c7"/>
+      <text x="77" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">2. INGESTION</text>
+      <text x="77" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0369a1">Gateway Pipeline</text>
+      <text x="77" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Online REST / Mesh Sync</text>
+    </g>
+
+    <line x1="350" y1="42" x2="375" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 3 -->
+    <g transform="translate(380, 0)">
+      <rect width="155" height="85" rx="8" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="155" height="22" rx="6" fill="#7c3aed"/>
+      <text x="77" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">3. AI TRIAGE</text>
+      <text x="77" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#6d28d9">Gemini 2.5 Flash</text>
+      <text x="77" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Multimodal Assessment</text>
+    </g>
+
+    <line x1="540" y1="42" x2="565" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 4 -->
+    <g transform="translate(570, 0)">
+      <rect width="155" height="85" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="155" height="22" rx="6" fill="#d97706"/>
+      <text x="77" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">4. PRIORITY SCORE</text>
+      <text x="77" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#b45309">PS8 Scoring</text>
+      <text x="77" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Severity 1-10 Banding</text>
+    </g>
+
+    <line x1="730" y1="42" x2="755" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 5 -->
+    <g transform="translate(760, 0)">
+      <rect width="140" height="85" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="140" height="22" rx="6" fill="#059669"/>
+      <text x="70" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">5. ORCHESTRATOR</text>
+      <text x="70" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#047857">Auto-Routing</text>
+      <text x="70" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Task Matching Matrix</text>
+    </g>
+  </g>
+
+  <!-- Connective Arrow from Row 1 to Row 2 -->
+  <path d="M 830 175 L 830 215 L 755 215" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+  <!-- ── ROW 2: Stages 6 to 9 (Right to Left) ── -->
+  <g transform="translate(30, 185)">
+    <!-- Stage 9 (End on Left) -->
+    <g transform="translate(0, 0)">
+      <rect width="165" height="85" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="2" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="165" height="22" rx="6" fill="#047857"/>
+      <text x="82" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">9. COMPLETION &amp; PROOF</text>
+      <text x="82" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#047857">✅ Resolved &amp; Verified</text>
+      <text x="82" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Photo/Notes Telemetry</text>
+    </g>
+
+    <line x1="205" y1="42" x2="175" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 8 -->
+    <g transform="translate(210, 0)">
+      <rect width="160" height="85" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="160" height="22" rx="6" fill="#2563eb"/>
+      <text x="80" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">8. VOLUNTEER RESCUE</text>
+      <text x="80" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">Accept &amp; Navigate</text>
+      <text x="80" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Real-Time Geo Tracking</text>
+    </g>
+
+    <line x1="425" y1="42" x2="380" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 7 -->
+    <g transform="translate(430, 0)">
+      <rect width="155" height="85" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="155" height="22" rx="6" fill="#d97706"/>
+      <text x="77" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">7. DISPATCH &amp; NOTIFY</text>
+      <text x="77" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#b45309">Coordinator Approval</text>
+      <text x="77" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Push Notification Sent</text>
+    </g>
+
+    <line x1="645" y1="42" x2="595" y2="42" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowWfL)"/>
+
+    <!-- Stage 6 -->
+    <g transform="translate(650, 0)">
+      <rect width="165" height="85" rx="8" fill="#ecfeff" stroke="#a5f3fc" stroke-width="1.5" filter="url(#shadowL3)"/>
+      <rect x="0" y="0" width="165" height="22" rx="6" fill="#0891b2"/>
+      <text x="82" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#fff">6. PROXIMITY SEARCH</text>
+      <text x="82" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0e7490">PostGIS ST_DWithin</text>
+      <text x="82" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#64748b">Nearest Available Vol</text>
+    </g>
+  </g>
+
+  <!-- ── CLOSED LOOP FEEDBACK BOX ── -->
+  <g transform="translate(30, 310)">
+    <rect width="900" height="135" rx="10" fill="#f8fafc" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <text x="30" y="45" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#059669">
+      🔄 CLOSED-LOOP REAL-TIME SITUATION FEEDBACK
+    </text>
+    <text x="30" y="70" font-family="system-ui, sans-serif" font-size="11" fill="#334155">
+      Every responder action (accepted, navigating, arrived, completed) emits Socket.IO telemetry events back to the Command Hub.
+    </text>
+    <text x="30" y="90" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">
+      Updates K-Means Density Heatmaps, frees allocated inventory hubs, and provides live casualty metrics to NDRF/SDRF commanders.
+    </text>
+
+    <g transform="translate(680, 25)">
+      <rect width="190" height="85" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="95" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#64748b">COMMAND CENTER SYNC</text>
+      <text x="95" y="48" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#0284c7">&lt; 150ms LATENCY</text>
+      <text x="95" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#059669">● 100% Audit Logging</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLight5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowL5">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowGapL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" rx="16" fill="url(#bgLight5)"/>
+  <rect x="1" y="1" width="958" height="518" rx="15" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#0f172a" letter-spacing="1">EXISTING DISASTER RESPONSE GAPS → SAHYOG SOLUTION</text>
+  <text x="480" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748b">Bridging the Critical Divide between Traditional Failures and Resilient Orchestration</text>
+
+  <!-- ── 5 COMPARISON ROWS ── -->
+  <!-- Row 1: Connectivity -->
+  <g transform="translate(40, 85)">
+    <!-- Gap Box (Left) -->
+    <rect width="380" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL5)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#dc2626">⚠️ 100% Internet / Cellular Dependency</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Tower collapse causes total blackout of emergency SOS alerts.</text>
+
+    <!-- Arrow Center -->
+    <line x1="400" y1="30" x2="480" y2="30" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowGapL)"/>
+
+    <!-- Solution Box (Right) -->
+    <g transform="translate(500, 0)">
+      <rect width="380" height="60" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL5)"/>
+      <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#059669">✅ Zero-Infrastructure BLE Mesh &amp; Store-Forward</text>
+      <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Local SQLite queue + peer-to-peer relay buffers &amp; syncs SOS.</text>
+    </g>
+  </g>
+
+  <!-- Row 2: Coordination -->
+  <g transform="translate(40, 155)">
+    <!-- Gap Box -->
+    <rect width="380" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL5)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#dc2626">⚠️ Fragmented &amp; Siloed Response Teams</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">NGOs, NDRF, and volunteers operate on isolated WhatsApp groups.</text>
+
+    <!-- Arrow Center -->
+    <line x1="400" y1="30" x2="480" y2="30" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowGapL)"/>
+
+    <!-- Solution Box -->
+    <g transform="translate(500, 0)">
+      <rect width="380" height="60" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL5)"/>
+      <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#059669">✅ Unified Multi-Role Crisis Orchestrator</text>
+      <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Role-based access (Citizens, Volunteers, NGOs, Coordinators).</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Triage -->
+  <g transform="translate(40, 225)">
+    <!-- Gap Box -->
+    <rect width="380" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL5)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#dc2626">⚠️ Manual, Delayed Operator Triage</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Overwhelmed operators create 3-4 hour dispatch bottlenecks.</text>
+
+    <!-- Arrow Center -->
+    <line x1="400" y1="30" x2="480" y2="30" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowGapL)"/>
+
+    <!-- Solution Box -->
+    <g transform="translate(500, 0)">
+      <rect width="380" height="60" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL5)"/>
+      <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#059669">✅ Gemini Multimodal AI Triage Engine</text>
+      <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Instant image damage analysis + audio voice note prioritization.</text>
+    </g>
+  </g>
+
+  <!-- Row 4: Visibility -->
+  <g transform="translate(40, 295)">
+    <!-- Gap Box -->
+    <rect width="380" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL5)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#dc2626">⚠️ Static Spreadsheets &amp; Blind Spots</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">No live location awareness of stranded victims or responders.</text>
+
+    <!-- Arrow Center -->
+    <line x1="400" y1="30" x2="480" y2="30" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowGapL)"/>
+
+    <!-- Solution Box -->
+    <g transform="translate(500, 0)">
+      <rect width="380" height="60" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL5)"/>
+      <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#059669">✅ Live 2D/3D Geospatial Tactical Command</text>
+      <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">CartoDB maps + Cesium 3D elevation + animated SOS pings.</text>
+    </g>
+  </g>
+
+  <!-- Row 5: Dispatch -->
+  <g transform="translate(40, 365)">
+    <!-- Gap Box -->
+    <rect width="380" height="60" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadowL5)"/>
+    <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#dc2626">⚠️ Manual Guesswork Volunteer Dispatch</text>
+    <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">Supplies sent to wrong zones while acute danger spots starve.</text>
+
+    <!-- Arrow Center -->
+    <line x1="400" y1="30" x2="480" y2="30" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowGapL)"/>
+
+    <!-- Solution Box -->
+    <g transform="translate(500, 0)">
+      <rect width="380" height="60" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadowL5)"/>
+      <text x="20" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#059669">✅ PostGIS Proximity Match &amp; Inventory Sync</text>
+      <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" fill="#334155">Spatial radius queries + automated task routing + proof of work.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Synthesis Banner -->
+  <rect x="40" y="445" width="880" height="45" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+  <text x="480" y="472" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#0369a1">
+    🚀 Sahyog bridges the Communication + Intelligence + Coordination gap into a single unified response pipeline.
+  </text>
+</svg>
